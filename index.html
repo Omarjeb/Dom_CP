@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <title>Barça Store</title>
+  </head>
+  <body>
+    <header>
+      <span class="nav-list">
+        <nav>Home</nav>
+        <nav>About</nav>
+        <nav>Contact</nav>
+      </span>
+      <span class="nav-search">
+        <input type="text" placeholder="Search" id="search" />
+        <button class="btn btn-warning">Search</button>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </span>
+    </header>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            height="500px"
+            src="https://store.fcbarcelona.com/medias/Banner-home-Festival-1456x568px-d.jpg?context=bWFzdGVyfHJvb3R8MTQzNDc2M3xpbWFnZS9qcGVnfGg2NS9oMTAvODk3ODk4Mzc4MDM4Mi9CYW5uZXJfaG9tZV9GZXN0aXZhbF8xNDU2eDU2OHB4X2QuanBnfGIyMjM1N2ZjNDk0YjY2NTlhMWQ2YmFmZmNmZDM0NDY3N2FmN2QyMzQxNzFiZmQ0MmY1MmQxNGJjMjMzZWU4ZjA"
+            class="d-block w-100"
+            alt="404"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            height="500px"
+            src="https://store.fcbarcelona.com/medias/Banner-home-1456x568px-10.jpg?context=bWFzdGVyfHJvb3R8NzMyNTAxfGltYWdlL2pwZWd8aGI5L2g3Mi84OTc3OTM5NzU5MTM0L0Jhbm5lcl9ob21lXzE0NTZ4NTY4cHhfMTAuanBnfDAyMjljZGJhNzcwNjVkNjMzZTk0NDVhMmEzODVhNzA5ZDM0NjMwZmQ0ZGI4MWNkYjBjNTJiNWI2ZmY1MGQzNmM"
+            class="d-block w-100"
+            alt="404"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            height="500px"
+            src="https://store.fcbarcelona.com/medias/desktop-pedri-trainign.jpg?context=bWFzdGVyfHJvb3R8MTIwOTg2fGltYWdlL2pwZWd8aDA2L2g2Yi84OTc4NjA5NTA0Mjg2L2Rlc2t0b3AgcGVkcmkgdHJhaW5pZ24uanBnfDc0NTExNDEwMDY2YTAwMTRkMTE0ODk1ZDIzNmE5MTY3YzgwN2EzNDliM2M2NzgzNWYxYjkyZWFiOWUxMTMyODk"
+            class="d-block w-100"
+            alt="404"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <main>
+      <p id="total">0</p>
+      <section id="about">
+        <h1>CART</h1>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="https://store.fcbarcelona.com/medias/GAVI6.jpg?context=bWFzdGVyfHJvb3R8NTY5Mzh8aW1hZ2UvanBlZ3xoMmIvaDBlLzg5NzM1NTUwMDc1MTgvR0FWSTYuanBnfGVjMmJjNjAyZGU0MDBmNjgwMjFkNjgyMzNmYzlhNmEzYjgxNTE4MzQ2MjU1ODU5YTllZTIzZTllZjkxZGQwNTk"
+              alt="404"
+            />
+            <span class="price"><span class="prix">220</span> DT</span>
+            <div class="content">
+              <i class="fa fa-heart" style="font-size: 24px"></i>
+              <button class="plus">+</button>
+              <span class="qte">0</span>
+              <button class="minus">-</button>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://store.fcbarcelona.com/medias/LEWI.jpg?context=bWFzdGVyfHJvb3R8NTc0NjN8aW1hZ2UvanBlZ3xoZWEvaDExLzg5NzM1NTUxMzg1OTAvTEVXSS5qcGd8MWU2NjdiMzQzYjgyYmU3NGYwYjg5NjlhNTVjMjcxZjI5Y2NiMTc3ZjVjYzFiYWQ5MzVhNzgzOWFkMjExNTliNg"
+              alt="404"
+            />
+            <span class="price"><span class="prix">240</span> DT</span>
+            <div class="content">
+              <i class="fa fa-heart" style="font-size: 24px"></i>
+              <button class="plus">+</button>
+              <span class="qte">0</span>
+              <button class="minus">-</button>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://store.fcbarcelona.com/medias/PEDRI.jpg?context=bWFzdGVyfHJvb3R8NTM1MDF8aW1hZ2UvanBlZ3xoYTkvaDE1Lzg5NzM1NTUyNjk2NjIvUEVEUkkuanBnfDYzODY5OTMyMDY0OGVlMjE5ZmYwNGU4MTBiMWM4ZDQ3NzkyNGM3NGE3ZjYxZDA2OWMxMTJiNDRmN2M5ZDUyNjQ"
+              alt="404"
+            />
+            <span class="price"><span class="prix">210</span> DT</span>
+            <div class="content">
+              <i class="fa fa-heart" style="font-size: 24px"></i>
+              <button class="plus">+</button>
+              <span class="qte">0</span>
+              <button class="minus">-</button>
+              <i class="fa-solid fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <footer><span> copy right ©2023</span></footer>
+
+  <script src="script.js"></script>
+</html>
